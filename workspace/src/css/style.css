@@ -1,12 +1,17 @@
 @charset "UTF-8";
 /* base */
 
+html{
+  height: 100%;
+}
+
 body {
   color: black;
   font-family: "Open Sans";
   line-height: 1.2;
   font-size: 16px;
   background-color: #f4eaea;
+  height: 100%;
 }
 
 /* header */
