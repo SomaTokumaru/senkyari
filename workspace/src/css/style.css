@@ -1,0 +1,709 @@
+@charset "UTF-8";
+/* base */
+
+body {
+  color: black;
+  font-family: "Open Sans";
+  line-height: 1.2;
+  font-size: 16px;
+  background-color: #f4eaea;
+}
+
+/* header */
+.header {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px;
+}
+
+.header-logo {
+  font-family: "Noto Sans JP";
+  font-weight: 900;
+  padding-left: 6px;
+  vertical-align: center;
+}
+
+.p-color {
+  display: inline-flex;
+  color: #201042;
+}
+
+.s-color {
+  color: #ff0000;
+}
+
+.title {
+  display: inline-flex;
+}
+
+.header-btn {
+  margin-right: 6px;
+  font-size: 12px;
+  width: 80px;
+  height: 32px;
+}
+
+/* .header-btn:hover {
+  background: rgba(32, 16, 66, 0.66);
+  border-radius: 6px;
+} */
+
+.form-btn {
+  border: 2px solid #201042;
+  border-radius: 6px;
+  width: 80px;
+  height: 32px;
+  /* display: flex; */
+  /* font-size: 14px; */
+  /* position: relative; */
+  font-size: 12px;
+}
+
+.form-btn:hover {
+  color: #fff;
+  background: rgba(32, 16, 66, 0.66);
+  border-radius: 6px;
+}
+
+/* .header-form_link {
+  font-size: 12px;
+  display: block;
+  font-size: 12px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 80px;
+  height: 32px;
+  margin: auto;
+  padding: 8px 0 8px;
+} */
+
+/* .header-form_link:hover {
+  color: #fff;
+  background: rgba(32, 16, 66, 0.66);
+  border-radius: 6px;
+} */
+
+/* main */
+
+.main-catch {
+  background-color: #201042;
+  box-shadow: 2px 2px 4px rgba(170, 170, 170, 0.16);
+  text-align: center;
+  display: block;
+  height: 46px;
+}
+
+.catch-free {
+  font-size: 12px;
+  color: rgba(252, 220, 74, 0.66);
+  text-align-last: left;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.main-key-comment {
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #fff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-key {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  width: 287px;
+  display: flex;
+  margin-top: 20px;
+  height: 40px;
+  justify-content: center;
+}
+
+.main-key::before {
+  transform: skewX(-30deg);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #201042;
+}
+
+.main-key-img {
+  width: 33px;
+  height: 33px;
+}
+
+.main-title {
+  margin-top: 32px;
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.line-left {
+  display: flex;
+  margin: 0 auto;
+}
+
+.line-right {
+  /* display: inlne-block; */
+  display: flex;
+  margin: 0 auto;
+}
+
+.line1 {
+  border-left: 2px solid black;
+  height: 100px;
+  margin-left: 20px;
+  transform: rotate(160deg);
+}
+
+/* .line2 {
+  border-left: 2px solid black;
+  height: 100px;
+  margin: 0 20px;
+} */
+
+.line2 {
+  border-left: 2px solid black;
+  height: 100px;
+  /* display: inline-block; */
+  margin-right: 20px;
+  transform: rotate(20deg);
+}
+
+/* .line4 {
+  border-left: 2px solid black;
+  height: 100px;
+  display: inline-block;
+  margin: 0 20px;
+} */
+
+.main-title-name {
+  padding-top: 6px;
+}
+
+.main-title-p {
+  color: #201042;
+  font-weight: 900;
+  text-align: center;
+}
+
+.main-title-s {
+  color: #ff0000;
+  font-weight: 900;
+}
+
+.main-title-sen {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.main-btn {
+  margin: 6px auto 0;
+  width: 192px;
+  height: 58px;
+  font-size: 20px;
+}
+
+/* .main-btn:hover {
+  background: rgba(32, 16, 66, 1);
+  border-radius: 6px;
+} */
+
+.start-btn {
+  border: 2px solid #201042;
+  border-radius: 6px;
+  background-color: rgba(32, 16, 66, 0.66);
+  width: 192px;
+  height: 58px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.start-btn:hover {
+  background: rgba(32, 16, 66, 1);
+  border-radius: 6px;
+  color: #fcdc4a;
+  /* border-left: #fcdc4a; */
+}
+
+.start-btn:hover .triangle-1,.start-btn:hover .triangle-2{
+  background-color: #fcdc4a;
+}
+
+.triangle {
+  /* position: absolute; */
+  display: block;
+  display: flex;
+  padding-left: 6px;
+}
+
+/* .triangle-1:hover {
+
+  background-color: #fcdc4a;
+} */
+/* .triangle-2:hover {
+  background-color: #fcdc4a;
+} */
+
+.triangle-1 {
+  /* position: absolute; */
+  /* right: 0; */
+  /* padding-right: 6px; */
+  background-color: #fff;
+  height: calc(18px / 2 * tan(60deg));
+  width: 18px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transform: rotate(90deg);
+}
+
+.triangle-2 {
+  /* position: absolute; */
+  /* right: 0; */
+  /* padding-right: 6px; */
+  background-color: #fff;
+  height: calc(18px / 2 * tan(60deg));
+  width: 18px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transform: rotate(90deg);
+  /* width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 16px solid #fff;
+  border-right: 0; */
+}
+
+/* .triangle-2 {
+  position: absolute;
+  right: 26px;
+  padding-right: 6px;
+  background-color: #fff;
+  height: calc(18px / 2 * tan(60deg));
+  width: 18px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transform: rotate(90deg);
+} */
+/* 
+.triangle {
+  background-color: #fcdc4a;
+} */
+
+/* body {
+  background-color: #212529;
+  display: grid;
+  height: calc(100vh - 16px);
+  margin: 0;
+  padding: 8px;
+  place-items: center;
+  width: calc(100% - 16px);
+} */
+
+/* .start-link {
+  font-weight: bold;
+  color: #fff;
+  display: block;
+} */
+
+/* .start-link:hover {
+  color: #fcdc4a;
+} */
+
+/* ホバーした時の範囲を広くしたい */
+
+.catch-5min {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+/* .ai-girl {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  width: 287px;
+  display: flex;
+  margin-top: 20px;
+  height: 40px;
+  justify-content: center;
+}
+
+.ai-girl::before {
+  transform: skewX(-30deg);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #201042;
+} */
+.explain-text {
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.ai-girl-img {
+  height: 300px;
+  width: auto;
+  transform: scale(-1, 1);
+}
+.explain {
+  display: flex;
+}
+
+.explain-purple {
+  color: #201042;
+  /* word-break: break-all; */
+  word-break: keep-all;
+}
+
+.explain-red {
+  color: #ff0000;
+  /* word-break: break-all; */
+  /* word-break: normal; */
+  /* word-break: break-word; */
+  word-break: keep-all;
+}
+
+/* next.html */
+
+/* header */
+
+.header-next {
+  background-color: #f4eaea;
+}
+
+.form-btn-next {
+  background-color: #fff;
+}
+
+/* main */
+
+.main-concept {
+  background-color: #201042;
+}
+
+.main-concept-sub-catch {
+  font-size: 16px;
+  word-break: keep-all;
+  color: rgba(252, 220, 74, 0.66);
+  text-align: center;
+  padding-top: 16px;
+}
+
+.main-key-img-next {
+  transform: rotate(180deg);
+  width: 14px;
+  height: 14px;
+}
+
+.main-concept-title {
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-weight: 900;
+  font-size: 24px;
+  padding-top: 14px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.main-concept-sub-title {
+  display: flex;
+  justify-content: center;
+}
+
+.strong-gold {
+  color: #fcdc4a;
+}
+
+.main-concept-catch {
+  margin-top: 14px;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  background-color: rgba(252, 220, 74, 0.66);
+  width: 258px;
+  height: 62px;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6px;
+}
+
+.main-concept-catch-para {
+  padding-left: 27px;
+}
+
+.main-concept-catch-1sen {
+  display: flex;
+}
+
+.main-concept-catch-2sen {
+  display: flex;
+}
+
+.strong-red {
+  color: #ff0000;
+}
+
+.main-concept-call {
+  margin-top: 12px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.pre-strong{
+  justify-content: center;
+  display: flex;
+}
+
+.strong {
+  font-weight: 900;
+  display: block;
+}
+
+/* result */
+
+.result-1{
+  background-color: #201042;
+  position: relative;
+
+}
+
+.your-result-1{
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+
+  top: 12px; /* 上からの位置を調整 */
+  /* left: 20px; 左からの位置を調整 */
+  width: 100%;
+  /* width: calc(100% - 40px); 左右の余白を考慮して幅を調整 */
+}
+
+.result-title-1{
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 54px;
+  width: 100%;
+  font-family: "Noto Sans JP";
+  font-weight: 900;
+}
+
+.your-career-1{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.result-your-career-1{
+  text-align: center;
+  display: block;
+}
+
+.result-career-1{
+  display: inline-block;
+  font-weight: 900;
+  font-family: "Noto Sans JP";
+  font-size: 12px;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 42px;
+  word-break: keep-all;
+  width: 264px;
+  text-align: left;
+}
+
+.your-girl-result-1-img{
+  width: 100px;
+  height: 100px;
+}
+
+.result-1-footer{
+  display: flex;
+}
+
+.ai-girl-result-img{
+  width: auto;
+  height: 170px;
+}
+
+/* 以下質問画面app.ts */
+#quiz-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+}
+
+.question {
+  margin-bottom: 20px; /* 質問間の余白を増やす */
+  font-size: 18px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 左寄せにする */
+  margin-bottom: 20px; /* 選択肢グループ間の余白を増やす */
+}
+
+.choice-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* 選択肢間の余白を増やす */
+  cursor: pointer;
+}
+
+.choice-label input[type="radio"] {
+  appearance: none; /* ブラウザのデフォルトスタイルを無効にする */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.choice-label input[type="radio"]:checked {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.choice-text {
+  font-size: 16px;
+}
+
+#quiz-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.question {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #311154;
+  font-weight: 600;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.choice-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 60px;
+}
+
+.choice-label input[type="radio"] {
+  display: none; /* デフォルトのラジオボタンを非表示にする */
+}
+
+.choice-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #311154;
+  margin-bottom: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.choice-label input[type="radio"]:checked + .choice-circle {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+}
+.choice-label:nth-child(1) input[type="radio"]:checked + .choice-circle {
+  background-color: #311154;
+  border-color: #311154;
+}
+.choice-label:nth-child(2) input[type="radio"]:checked + .choice-circle {
+  background-color: #fff;
+  border-color: #311154;
+}
+.choice-label:nth-child(3) input[type="radio"]:checked + .choice-circle {
+  background-color: #cc0066;
+  border-color: #cc0066;
+}
+.choice-label:nth-child(4) input[type="radio"]:checked + .choice-circle {
+  background-color: #fff;
+  border-color: #ffcc00;
+}
+.choice-label:nth-child(5) input[type="radio"]:checked + .choice-circle {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+}
+
+.choice-text {
+  font-size: 14px;
+  color: #311154;
+}
+.choice-label:nth-child(1) .choice-text {
+  font-size: 14px;
+  color: #311154;
+  width: 120px;
+}
+.choice-label:nth-child(5) .choice-text {
+  font-size: 14px;
+  color: #ffcc00;
+  width: 120px;
+}
+
+#result-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+}
