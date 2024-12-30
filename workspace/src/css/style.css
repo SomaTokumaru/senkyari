@@ -143,6 +143,7 @@ body {
 }
 
 .main-key-img {
+  transform: rotate(180deg);
   width: 33px;
   height: 33px;
 }
@@ -559,11 +560,34 @@ body {
 
 .result-1-footer{
   display: flex;
+  justify-content: space-between; 
+}
+
+.result-1-fotter-left{
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ai-girl-result-img{
   width: auto;
   height: 170px;
+  margin-right: 6px;
+}
+
+.pre-result-btn{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans";
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+
+.main-key-img-result {
+  transform: rotate(180deg);
+  width: 33px;
+  height: 33px;
 }
 
 /* 以下質問画面app.ts */
