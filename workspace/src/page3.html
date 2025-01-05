@@ -25,27 +25,106 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header-next">
       <h1 class="header-logo">
         <a href="index.html" class="header-logo_link"
           ><div class="p-color">適職診断サイト</div>
-
           <div class="title">
             <div class="s-color">セン</div>
             キャリ
           </div>
         </a>
+        <div class="header-logo-sub">
+          あなたの才能を活かせる仕事を100の質問から即選定！
+        </div>
       </h1>
       <div class="header-btn">
-        <button class="form-btn">
+        <button class="form-btn form-btn-next">
           <a href="https://lin.ee/MblNQGH" class="header-form_link"
             >お問い合わせ</a
           >
         </button>
       </div>
     </header>
-    <main>
-      診断画面2
+    <main class="main">
+      <div class="main-concept">
+        <div class="main-concept-sub-catch">
+          IT革命、外資系企業の参入、DX導入 etc.
+          続々と新しい企業、職種が乱立する新時代
+          あなたの"好き"がハイキャリアへの鍵に
+          <img
+            src="images/goldkey.png"
+            alt="金色の鍵"
+            class="main-key-img-next"
+          />
+        </div>
+        <div class="main-concept-title">
+          適職診断サイト
+          <div class="main-concept-sub-title">
+            『
+            <div class="strong-gold">セン</div>
+            キャリ』
+          </div>
+        </div>
+        <div class="main-concept-catch">
+          <p class="main-concept-catch-para">
+            あなたの
+            <span class="main-concept-catch-1sen">
+              <span class="strong-red">セン</span>
+              <span class="strong">『潜在能力』</span>
+              が活きるキャリアを
+            </span>
+            <span class="main-concept-catch-2sen">
+              <span class="strong-red">セン</span>
+              <span class="strong">『選択』</span>
+              できる
+            </span>
+          </p>
+        </div>
+        <div class="main-concept-call">
+          <div>これからの時代に活きる</div>
+          <div class="pre-strong">
+            あなただけの
+            <div class="strong">キャリア</div>
+          </div>
+          <div>５分で診断してみませんか？</div>
+        </div>
+      </div>
+      <div id="quiz-container">
+        <div class="question">チームでの協力が必要な仕事を好む。</div>
+        <div class="choices">
+          <label class="choice-label">
+            <input type="radio" name="question1" value="0" />
+            <span class="choice-circle"></span>
+            <span class="choice-text">全く思わない</span>
+          </label>
+          <label class="choice-label">
+            <input type="radio" name="question1" value="1" />
+            <span class="choice-circle"></span>
+            <span class="choice-text"></span>
+          </label>
+          <label class="choice-label">
+            <input type="radio" name="question1" value="2" />
+            <span class="choice-circle"></span>
+            <span class="choice-text"></span>
+          </label>
+          <label class="choice-label">
+            <input type="radio" name="question1" value="3" />
+            <span class="choice-circle"></span>
+            <span class="choice-text"></span>
+          </label>
+          <label class="choice-label">
+            <input type="radio" name="question1" value="4" />
+            <span class="choice-circle"></span>
+            <span class="choice-text">非常にそう思う</span>
+          </label>
+        </div>
+        <div id="navigation">
+          <button id="result-button" onclick="showResult()">結果を見る</button>
+        </div>
+      </div>
+      <div id="result" style="display: none"></div>
+      <script type="module" src="app.js"></script>
       <div class="main-btn">
         <button class="start-btn" onclick="location.href='page4.html'">
           次へ

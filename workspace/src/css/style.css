@@ -24,7 +24,7 @@ body {
   box-shadow: 2px 2px 4px;
 }
 
-.header-logo {
+.header-logo_link {
   font-family: "Noto Sans JP";
   font-weight: 900;
   padding-left: 6px;
@@ -42,6 +42,13 @@ body {
 
 .title {
   display: inline-flex;
+}
+
+.header-logo-sub {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 10px;
+  padding-left: 6px;
 }
 
 .header-btn {
