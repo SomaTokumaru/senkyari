@@ -46,17 +46,18 @@
         </button>
       </div>
     </header>
-    <main class="main">
+    <main class="main-content">
       <div class="main-concept">
         <div class="main-concept-sub-catch">
-          IT革命、外資系企業の参入、DX導入 etc.
-          続々と新しい企業、職種が乱立する新時代
-          あなたの"好き"がハイキャリアへの鍵に
-          <img
-            src="images/goldkey.png"
-            alt="金色の鍵"
-            class="main-key-img-next"
-          />
+          IT革命、外資系企業の参入、DX導入 etc.　<wbr />続々と新しい企業、職種が乱立する新時代<wbr />
+          <div>
+            あなたの"好き"がハイキャリアへの鍵に
+            <img
+              src="images/goldkey.png"
+              alt="金色の鍵"
+              class="main-key-img-next"
+            />
+          </div>
         </div>
         <div class="main-concept-title">
           適職診断サイト
@@ -69,15 +70,17 @@
         <div class="main-concept-catch">
           <p class="main-concept-catch-para">
             あなたの
-            <span class="main-concept-catch-1sen">
-              <span class="strong-red">セン</span>
-              <span class="strong">『潜在能力』</span>
-              が活きるキャリアを
-            </span>
-            <span class="main-concept-catch-2sen">
-              <span class="strong-red">セン</span>
-              <span class="strong">『選択』</span>
-              できる
+            <span class="main-concept-catch-para-span">
+              <span class="main-concept-catch-1sen">
+                <span class="strong-red">セン</span>
+                <span class="strong">『潜在能力』</span>
+                が活きるキャリアを　
+              </span>
+              <span class="main-concept-catch-2sen">
+                <span class="strong-red">セン</span>
+                <span class="strong">『選択』</span>
+                できる
+              </span>
             </span>
           </p>
         </div>
@@ -90,42 +93,13 @@
           <div>５分で診断してみませんか？</div>
         </div>
       </div>
-      <div id="quiz-container">
-        <div class="question">チームでの協力が必要な仕事を好む。</div>
-        <div class="choices">
-          <label class="choice-label">
-            <input type="radio" name="question1" value="0" />
-            <span class="choice-circle"></span>
-            <span class="choice-text">全く思わない</span>
-          </label>
-          <label class="choice-label">
-            <input type="radio" name="question1" value="1" />
-            <span class="choice-circle"></span>
-            <span class="choice-text"></span>
-          </label>
-          <label class="choice-label">
-            <input type="radio" name="question1" value="2" />
-            <span class="choice-circle"></span>
-            <span class="choice-text"></span>
-          </label>
-          <label class="choice-label">
-            <input type="radio" name="question1" value="3" />
-            <span class="choice-circle"></span>
-            <span class="choice-text"></span>
-          </label>
-          <label class="choice-label">
-            <input type="radio" name="question1" value="4" />
-            <span class="choice-circle"></span>
-            <span class="choice-text">非常にそう思う</span>
-          </label>
-        </div>
-        <div id="navigation">
-          <button id="result-button" onclick="showResult()">結果を見る</button>
-        </div>
+      <div class="question-answer">
+        <div id="quiz-container"></div>
+        <!-- <div id="total-score"></div> -->
+
+        <script src="app-page9.js"></script>
       </div>
-      <div id="result" style="display: none"></div>
-      <script type="module" src="app.js"></script>
-      <div class="main-btn">
+      <div class="next-btn">
         <button class="start-btn" onclick="location.href='page10.html'">
           次へ
           <div class="triangle">
@@ -135,5 +109,17 @@
         </button>
       </div>
     </main>
+    <footer class="footer">
+      <div class="achieve">90%</div>
+      <div class="achieve-bar">
+        <div class="current-point current-point-90p">
+          <img
+            src="images/goldkey.png"
+            alt="金色の鍵"
+            class="main-key-img-footer main-key-img-footer-90p"
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
