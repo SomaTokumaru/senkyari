@@ -1,7 +1,4 @@
 const quizContainer = document.getElementById("quiz-container");
-// const totalScoreDisplay = document.getElementById("total-score");
-// const resetButton = document.getElementById("reset-button");
-
 // sessionStorage から合計点を読み込む (ページ読み込み時)
 let totalScore = sessionStorage.getItem("totalScore");
 if (totalScore === null) {
@@ -9,7 +6,6 @@ if (totalScore === null) {
 } else {
   totalScore = parseInt(totalScore, 10);
 }
-// totalScoreDisplay.textContent = `合計点: ${totalScore}`;
 
 // ボタンに割り当てる点数
 const buttonScores = [0, 1, 2, 3, 4];
@@ -17,16 +13,12 @@ const buttonScores = [0, 1, 2, 3, 4];
 // 問題文とボタンのセットを定義
 const quizData = [
   { question: "趣味はグループで行いたい。" },
-  {
-    question: "少しでも間違えると、自分の能力や知識を疑ってしまう。",
-  },
+  { question: "少しでも間違えると、自分の能力や知識を疑ってしまう。" },
   { question: "自分には想像の力や<wbr>妄想の力があると思う。" },
   { question: "自分の勘は鋭いと思う。" },
   { question: "物事はいい方向に<wbr>向かうものだと思っている。" },
   { question: "時には効率よりも、感情面を優先すべきだと思う。" },
-  {
-    question: "自分のリラックスできる<wbr>ルーティンを持っている。",
-  },
+  { question: "自分のリラックスできる<wbr>ルーティンを持っている。" },
   { question: "物事は思ったように動いてきたと思う。" },
   { question: "創造的なことに興味がある。" },
   { question: "不安はほとんど感じない。" },
@@ -36,7 +28,7 @@ const quizData = [
   },
 ];
 
-// 10セットの問題とボタンを作成
+// 11セットの問題とボタンを作成
 quizData.forEach((data, i) => {
   // 問題とボタンセットをまとめるdiv
   const quizItem = document.createElement("div");
@@ -109,7 +101,6 @@ quizData.forEach((data, i) => {
 
       const currentScore = parseInt(button.dataset.score, 10);
       totalScore = totalScore - previousScore + currentScore;
-      //   totalScoreDisplay.textContent = `合計点: ${totalScore}`;
 
       sessionStorage.setItem("totalScore", totalScore);
 
@@ -143,7 +134,6 @@ function getActiveButtonIndices() {
 function restoreState(state) {
   if (state) {
     totalScore = state.totalScore;
-    // totalScoreDisplay.textContent = `合計点: ${totalScore}`;
     sessionStorage.setItem("totalScore", totalScore);
 
     // すべてのボタンを非アクティブにする
@@ -181,5 +171,3 @@ const initialState = {
   activeButtons: getActiveButtonIndices(),
 };
 restoreState(initialState);
-
-console.log(`合計点: ${totalScore}`); //確認用

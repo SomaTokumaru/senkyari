@@ -1,6 +1,4 @@
 const quizContainer = document.getElementById("quiz-container");
-// const totalScoreDisplay = document.getElementById("total-score");
-// const resetButton = document.getElementById("reset-button");
 const nextButton = document.getElementById("next-button");
 // sessionStorage から合計点を読み込む (ページ読み込み時)
 let totalScore = sessionStorage.getItem("totalScore");
@@ -9,7 +7,6 @@ if (totalScore === null) {
 } else {
   totalScore = parseInt(totalScore, 10);
 }
-// totalScoreDisplay.textContent = `合計点: ${totalScore}`;
 
 // ボタンに割り当てる点数
 const buttonScores = [0, 1, 2, 3, 4];
@@ -29,7 +26,7 @@ const quizData = [
   { question: "誰かに評価をされると<wbr>疑うことなく自信を持てる。" },
 ];
 
-// 10セットの問題とボタンを作成
+// 8セットの問題とボタンを作成
 quizData.forEach((data, i) => {
   // 問題とボタンセットをまとめるdiv
   const quizItem = document.createElement("div");
@@ -102,7 +99,6 @@ quizData.forEach((data, i) => {
 
       const currentScore = parseInt(button.dataset.score, 10);
       totalScore = totalScore - previousScore + currentScore;
-      //   totalScoreDisplay.textContent = `合計点: ${totalScore}`;
 
       sessionStorage.setItem("totalScore", totalScore);
 
@@ -136,7 +132,6 @@ function getActiveButtonIndices() {
 function restoreState(state) {
   if (state) {
     totalScore = state.totalScore;
-    // totalScoreDisplay.textContent = `合計点: ${totalScore}`;
     sessionStorage.setItem("totalScore", totalScore);
 
     // すべてのボタンを非アクティブにする
@@ -206,4 +201,3 @@ nextButton.addEventListener("click", () => {
   // ページ遷移
   window.location.href = nextPageURL;
 });
-console.log(`合計点: ${totalScore}`); //確認用

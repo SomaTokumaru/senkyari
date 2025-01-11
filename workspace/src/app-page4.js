@@ -1,7 +1,4 @@
 const quizContainer = document.getElementById("quiz-container");
-// const totalScoreDisplay = document.getElementById("total-score");
-// const resetButton = document.getElementById("reset-button");
-
 // sessionStorage から合計点を読み込む (ページ読み込み時)
 let totalScore = sessionStorage.getItem("totalScore");
 if (totalScore === null) {
@@ -9,7 +6,6 @@ if (totalScore === null) {
 } else {
   totalScore = parseInt(totalScore, 10);
 }
-// totalScoreDisplay.textContent = `合計点: ${totalScore}`;
 
 // ボタンに割り当てる点数
 const buttonScores = [0, 1, 2, 3, 4];
@@ -22,16 +18,14 @@ const quizData = [
   { question: "想像性は高い方だ。" },
   { question: "日頃、自分のペースで人と接したり<wbr>過ごすことができている。" },
   { question: "自分のことが好きだ。" },
-  {
-    question: "所属するコミュニティ内での<wbr>自分の役割、居場所を感じる。",
-  },
+  { question: "所属するコミュニティ内での<wbr>自分の役割、居場所を感じる。" },
   { question: "エネルギッシュである。" },
   { question: "情緒が安定していると思う。" },
   { question: "世界中の様々なことに感謝している。" },
   { question: "自分は健康だと思う。" },
 ];
 
-// 10セットの問題とボタンを作成
+// 11セットの問題とボタンを作成
 quizData.forEach((data, i) => {
   // 問題とボタンセットをまとめるdiv
   const quizItem = document.createElement("div");
@@ -104,7 +98,6 @@ quizData.forEach((data, i) => {
 
       const currentScore = parseInt(button.dataset.score, 10);
       totalScore = totalScore - previousScore + currentScore;
-      //   totalScoreDisplay.textContent = `合計点: ${totalScore}`;
 
       sessionStorage.setItem("totalScore", totalScore);
 
@@ -138,7 +131,6 @@ function getActiveButtonIndices() {
 function restoreState(state) {
   if (state) {
     totalScore = state.totalScore;
-    // totalScoreDisplay.textContent = `合計点: ${totalScore}`;
     sessionStorage.setItem("totalScore", totalScore);
 
     // すべてのボタンを非アクティブにする
@@ -176,5 +168,3 @@ const initialState = {
   activeButtons: getActiveButtonIndices(),
 };
 restoreState(initialState);
-
-console.log(`合計点: ${totalScore}`); //確認用
