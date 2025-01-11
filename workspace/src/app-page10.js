@@ -179,28 +179,28 @@ restoreState(initialState);
 nextButton.addEventListener("click", () => {
   let nextPageURL;
   if (totalScore >= 0 && totalScore <= 42) {
-    nextPageURL = "result1.html";
-  } else if (totalScore >= 43 && totalScore <= 84) {
-    nextPageURL = "result2.html";
-  } else if (totalScore >= 85 && totalScore <= 126) {
-    nextPageURL = "result3.html";
-  } else if (totalScore >= 127 && totalScore <= 168) {
-    nextPageURL = "result4.html";
-  } else if (totalScore >= 169 && totalScore <= 210) {
-    nextPageURL = "result5.html";
-  } else if (totalScore >= 211 && totalScore <= 252) {
-    nextPageURL = "result6.html";
-  } else if (totalScore >= 253 && totalScore <= 294) {
-    nextPageURL = "result7.html";
-  } else if (totalScore >= 295 && totalScore <= 336) {
-    nextPageURL = "result8.html";
-  } else if (totalScore >= 337 && totalScore <= 378) {
-    nextPageURL = "result9.html";
-  } else if (totalScore >= 379 && totalScore <= 420) {
     nextPageURL = "result10.html";
+  } else if (totalScore >= 43 && totalScore <= 84) {
+    nextPageURL = "result9.html";
+  } else if (totalScore >= 85 && totalScore <= 126) {
+    nextPageURL = "result8.html";
+  } else if (totalScore >= 127 && totalScore <= 168) {
+    nextPageURL = "result7.html";
+  } else if (totalScore >= 169 && totalScore <= 210) {
+    nextPageURL = "result6.html";
+  } else if (totalScore >= 211 && totalScore <= 252) {
+    nextPageURL = "result5.html";
+  } else if (totalScore >= 253 && totalScore <= 294) {
+    nextPageURL = "result4.html";
+  } else if (totalScore >= 295 && totalScore <= 336) {
+    nextPageURL = "result3.html";
+  } else if (totalScore >= 337 && totalScore <= 378) {
+    nextPageURL = "result2.html";
+  } else if (totalScore >= 379 && totalScore <= 420) {
+    nextPageURL = "result1.html";
   } else {
     // 念のため、デフォルトの遷移先
-    nextPageURL = "result1.html";
+    nextPageURL = "result10.html";
   }
 
   // ページ遷移
