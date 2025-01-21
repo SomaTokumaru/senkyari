@@ -257,6 +257,12 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 374px) {
+  .main-title-p#vw {
+    font-size: 10vw;
+  }
+}
+
 .main-title-s {
   color: #ff0000;
   font-weight: 900;
